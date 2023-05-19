@@ -39,7 +39,7 @@ public class MultiThreadServer extends Thread{
         public void run() {
             try {
                 SocketAddress ip = socket.getRemoteSocketAddress();
-                System.out.println("New Client Connection : " + clienID+ " ip : "+ip);
+                System.out.println("new client connection : " + clienID+ " ip : "+ip);
                 //lire une chaine
                 InputStream is = socket.getInputStream();
                 InputStreamReader isr = new InputStreamReader(is);
